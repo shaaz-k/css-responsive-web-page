@@ -1,0 +1,149 @@
+/* Default- For Desktop view */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.logo{
+  width: 200px;
+  height: auto;
+}
+
+span{
+  color: midnightblue;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.space{
+  margin: 50px 0px 0px 0px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  /* color: #fe0000; */
+}
+
+.tile-image{
+  width: 360px;
+  float: left;
+  margin: 0% 5% 0% 0%;
+}
+
+.card {
+  display: inline-block;
+  width: 40%;
+  margin: 3% 5% 3% 3%;
+}
+
+
+
+/* For typical mobile screen */
+@media (min-width: 211px) and (max-width: 480px){
+  .starting{
+    text-align: center;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .logo{
+    width: 80px;
+    height: auto;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    min-width: 180px;
+    margin: 3% 3% 10% 3%;
+  } 
+
+  .tile-image{
+    width: 100%;
+    /* float: left; */
+    margin: 0% 5% 0% 0%;
+  }
+
+} 
+
+
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 956px){
+  .starting{
+    text-align: center;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  .logo{
+    width: 140px;
+    height: auto;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    min-width: 180px;
+    margin: 3% 3% 10% 3%;
+  } 
+
+  .tile-image{
+    width: 100%;
+    margin: 0% 5% 0% 0%;
+  }
+} 
+
+
+
+/* For extremely narrow width (unnecessary stuff but fun) */
+@media (max-width: 210px){
+  span{
+    display: inline-block;  
+    min-width: 25px;
+  }
+  
+  /* Rest of the code is same as that of mobile view */
+  .starting{
+    text-align: center;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .logo{
+    width: 80px;
+    height: auto;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    min-width: 180px;
+    margin: 3% 3% 10% 3%;
+  } 
+
+  .tile-image{
+    width: 100%;
+    /* float: left; */
+    margin: 0% 5% 0% 0%;
+  }
+
+}
+
